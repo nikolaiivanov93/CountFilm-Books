@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <el-menu :router="true" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-      <el-menu-item v-for="link in linkMenu" :key="link.title" :route="link.url" :index=link><router-link class="el__link" :to=link.url>{{ link.title }}</router-link></el-menu-item>
+      <el-menu-item v-for="link in linkMenu" :key="link.title" :route="link.url" :index="link.title">{{ link.title }}</el-menu-item>
       <!-- <el-menu-item index="1">Processing Center</el-menu-item>
       <el-submenu index="2">
         <template slot="title">Workspace</template>
@@ -30,6 +30,7 @@
 export default {
   data () {
     return {
+      activeIndex: 'Home',
       linkMenu: [
         { title: 'Home', url: '/' },
         { title: 'Login', url: '/login' },
