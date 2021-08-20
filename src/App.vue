@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <el-menu :router="true" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-      <el-menu-item v-for="link in linkMenu" :key="link.title" :route="link.url" :index="link.title">{{ link.title }}</el-menu-item>
+    <el-menu :router="true" :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
+      <el-menu-item class="el__link" v-for="link in linkMenu" :key="link.title" :route="link.url" :index="link.title">{{ link.title }}</el-menu-item>
       <!-- <el-menu-item index="1">Processing Center</el-menu-item>
       <el-submenu index="2">
         <template slot="title">Workspace</template>

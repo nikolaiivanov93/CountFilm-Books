@@ -1,6 +1,6 @@
 <template>
-  <div class="registration">
-    <h1>Registration</h1>
+  <div class="reg">
+    <h1 class="reg__title">Registration</h1>
   </div>
 </template>
 
@@ -15,8 +15,11 @@ export default {
 </script>
 
 <style lang="scss">
-  .registration {
+  .reg {
     font-size: 26px;
     color: #000;
+    &__title {
+      font-family: "Helvetica Neue", Helvetica;
+    }
   }
 </style>
